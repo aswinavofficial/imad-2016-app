@@ -1,3 +1,3 @@
 console.log('Loaded!');
-var button=getElementById("contactfb");
+var button=document.getElementById("contactfb");
 button.onclick=function(){ alert("hi") };
