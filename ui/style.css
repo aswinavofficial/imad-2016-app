@@ -8,6 +8,10 @@ body {
     text-align: center;
 }
 
+.info {
+    text-align: center;
+}
+
 .text-big {
     font-size: 300%;
 }
@@ -19,8 +23,10 @@ body {
 .img-medium {
     height: 200px;
 }
-contact{
+
+.contact{
     text-align:center
+
     
 
 }
