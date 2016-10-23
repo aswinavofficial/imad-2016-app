@@ -13,7 +13,7 @@ app.get('/cgpa', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'cgpa.html'));
 });
 
-app.get('/javascriptfile.js', function (req, res) {
+app.get('/ui/javascriptfile.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'javascriptfile.js'));
 });
 
