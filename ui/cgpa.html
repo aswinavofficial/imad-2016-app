@@ -1,0 +1,287 @@
+
+<html>
+<head>
+<title>KTU GPA CALCULATOR</title>
+<link href="styled.css" rel="stylesheet" type="text/css">
+<basefont size="10">
+
+<style>
+
+</style>
+<script src="javascriptfile.js">
+</script>
+</head>
+<body>
+	 <form >
+
+
+		<!--Main Heading-->
+
+		<div id="mainheading">
+		<br><br><br><br>
+		<h1 align="center"><U><B>KTU GPA CALCULATOR</h1></b></u>
+		<br><br><br><br>
+		</div>
+		<!--Drop Down list for selecting the semester--> 
+		<br><br><br><br>
+
+
+
+		<table width="100%">
+			<tr>
+				<th class="left1">
+				<p class="mainhead" style="display:inline"> Select Semester : </p>				
+				</th>			
+				<th class="right1">
+					<select name="sem" id="sem" onchange="ifchanged()" >
+						<option value="s1" >S1</option>
+						<option value="s2">S2</option>
+						<option value="s3">S3</option>
+						<option value="s4" disabled>S4</option>
+						<option value="s5" disabled>S5</option>
+						<option value="s6" disabled>S6</option>
+						<option value="s7" disabled>S7</option>
+						<option value="s8" disabled>S8</option>
+					</select>
+				</th>				
+			</tr>
+			<tr>
+				<th class="left1">
+					<p class="mainhead" style="display:inline">Enter Branch: </p>
+				</th>
+				<th class="right1">
+					<select name="branch"  id="branch" onchange="ifchanged()" >
+						<option value="cs">Computer Science</option>
+						<option value="eee">Electrical and Electronics</option>
+						<option value="ec">Electronics and Communication</option>
+						<option value="me">Mechanical</option>
+						<option value="ce">Civil</option>			
+					 </select>				
+				</th>
+			</tr>
+			<tr>
+				<th class="left1">
+				<p class="mainhead" style="display:inline">Select Subject (Only for S1 and S2) :</p>
+				</th>
+				<th class="right1">
+					<select name="gmchoice"  id="gmchoice"  onchange="ifchanged()">
+						<option value="gs">Graphics</option>
+						<option value="ms">Mechanics</option>
+					</select>
+				</th>			
+			</tr>		
+
+		</table>
+		 
+		<p id="selectgrades" align="center"><strong><u>Select Grades:<br></u></strong></p><br>
+		
+		<!--Contains the 9 subjects-->
+		<!--For S1 s2 there are 9 but only 8 for higher semesters. so last para is hidden is sem is s3 or above-->	
+		<!--Each subjects has ids sub1,sub2 ... and the drop down lists having the grades as grade1,grade2...-->
+		<table width="75%">
+			<tr>
+				<th class="left">
+					<p id="sub1" style="display:inline" class="mainhead">Calculus</p>
+				</th>
+				<th class="right">
+					<select name="grade1"  id="grade1">
+						<option value="os">OS</option>
+						<option value="a+">A+</option>
+						<option value="a">A</option>
+						<option value="b+">B+</option>
+						<option value="b">B</option>
+						<option value="c">C</option>
+						<option value="p">P</option>
+						<option value="f">F</option>
+					</select>
+				</th>
+			</tr>
+			
+			
+			<tr>
+				<th class="left"> 
+					<p id="sub2"  style="display:inline"class="mainhead">Engineering Phy/Chem:</p>
+				</th>
+				<th class="right">
+						 <select name="grade2" id="grade2">
+							<option value="os">OS</option>
+							<option value="a+">A+</option>
+							<option value="a">A</option>
+							<option value="b+">B+</option>
+							<option value="b">B</option>
+							<option value="c">C</option>
+							<option value="p">P</option>
+							<option value="f">F</option>			
+						</select>
+				</th>
+			</tr>
+			
+			
+			
+			<tr>
+				<th class="left"> 
+					<p id="sub3"  style="display:inline"class="mainhead">Engineering Graphics:</p>
+				</th>
+				<th class="right">
+						 <select name="grade3" id="grade3">
+							<option value="os">OS</option>
+							<option value="a+">A+</option>
+							<option value="a">A</option>
+							<option value="b+">B+</option>
+							<option value="b">B</option>
+							<option value="c">C</option>
+							<option value="p">P</option>
+							<option value="f">F</option>			
+						</select>
+				</th>
+			</tr>				
+				
+				
+				
+				
+				
+				<tr>
+				<th class="left"> 
+					<p id="sub4"  style="display:inline" class="mainhead">Introduction to your subject: </p>
+				</th>
+				<th class="right">
+						 <select name="grade4" id="grade4">
+							<option value="os">OS</option>
+							<option value="a+">A+</option>
+							<option value="a">A</option>
+							<option value="b+">B+</option>
+							<option value="b">B</option>
+							<option value="c">C</option>
+							<option value="p">P</option>
+							<option value="f">F</option>			
+						</select>
+				</th>
+			</tr>
+			
+			
+			<tr>
+				<th class="left"> 
+					<p id="sub5"  style="display:inline"class="mainhead">Basics of X Engineering: </p>
+				</th>
+				<th class="right">
+						 <select name="grade5" id="grade5">
+							<option value="os">OS</option>
+							<option value="a+">A+</option>
+							<option value="a">A</option>
+							<option value="b+">B+</option>
+							<option value="b">B</option>
+							<option value="c">C</option>
+							<option value="p">P</option>
+							<option value="f">F</option>			
+						</select>
+				</th>
+			</tr>
+				
+			<tr>
+				<th class="left"> 
+					<p id="sub6"  style="display:inline"class="mainhead">Introduction to Sustainable Engineering</p>
+				</th>
+				<th class="right">
+						 <select name="grade6" id="grade6">
+							<option value="os">OS</option>
+							<option value="a+">A+</option>
+							<option value="a">A</option>
+							<option value="b+">B+</option>
+							<option value="b">B</option>
+							<option value="c">C</option>
+							<option value="p">P</option>
+							<option value="f">F</option>			
+						</select>
+				</th>
+			</tr>
+			
+			<tr>
+				<th class="left"> 
+					<p id="sub7"  style="display:inline"class="mainhead">Phy/Chem Lab</p>
+				</th>
+				<th class="right">
+						 <select name="grade7" id="grade7">
+							<option value="os">OS</option>
+							<option value="a+">A+</option>
+							<option value="a">A</option>
+							<option value="b+">B+</option>
+							<option value="b">B</option>
+							<option value="c">C</option>
+							<option value="p">P</option>
+							<option value="f">F</option>			
+						</select>
+				</th>
+			</tr>
+			
+			<tr>
+				<th class="left"> 
+					<p id="sub8"  style="display:inline"class="mainhead">Basic Engineering Workshop I</p>
+				</th>
+				<th class="right">
+						 <select name="grade8" id="grade8">
+							<option value="os">OS</option>
+							<option value="a+">A+</option>
+							<option value="a">A</option>
+							<option value="b+">B+</option>
+							<option value="b">B</option>
+							<option value="c">C</option>
+							<option value="p">P</option>
+							<option value="f">F</option>			
+						</select>
+				</th>
+			</tr>			
+			
+				<tr>
+				<th class="left"> 
+					<p id="sub9"  style="display:inline"class="mainhead">Basic Engineering Workshop II</p>
+				</th>
+				<th class="right">
+						 <select name="grade9" id="grade9">
+							<option value="os">OS</option>
+							<option value="a+">A+</option>
+							<option value="a">A</option>
+							<option value="b+">B+</option>
+							<option value="b">B</option>
+							<option value="c">C</option>
+							<option value="p">P</option>
+							<option value="f">F</option>			
+						</select>
+				</th>
+			</tr>			
+			
+				
+		</table>
+				
+
+			
+		 
+		<!--where is the cgpa is finally displayed<-->
+		<br><br><br><br>
+		<div id="cgpadecor" ><b>
+			<p style="display:inline" class="gpa1" ><b>YOUR GPA : </b></p>
+			<p id="cgpa" class="gpa2" style="display:inline"></p></b>
+			<br><br><br>
+		</div>
+			  
+		<span style="">
+		<!--Claculate CGPA button-->
+		<button type="button" onclick="getOption()" id="gpabutton" align="center">CALCULATE GPA</button>
+		<br style=""><br><br><br><br>
+		
+		</span>
+		<div id="footer">
+		<br><br><br><br><br>
+		<p id="footerp" align="center">&copy;ASWIN AV</p>
+		<br><br><br><br><br>
+
+		
+		
+		
+		</div>
+		  
+	  </form>
+
+</body>
+</html>
+
+
