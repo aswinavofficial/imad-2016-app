@@ -1,0 +1,79 @@
+@charset "utf-8";
+#container p 
+{ 
+display: inline
+ }
+.mainhead
+{
+	font-size: 25;
+	padding-left: 100px;
+}
+#cgpadecor
+{
+color:red;
+}
+
+.test
+{
+font-size:25;
+}
+#grade1,#grade2,#grade3,#grade4,#grade5,#grade6,#grade7,#grade8,#grade9,#sem,#branch,#gm,#gmchoice,#gpabutton,#gmchoice,.gpa{
+font-size:25;
+}
+#mainheading
+{
+	color: white;
+	background-color: black;
+	border-bottom:25px solid blue
+}
+#gpabutton
+{
+	size: 25;
+	height: 100px;
+	width: 500px;
+	margin-left: 35%;
+	
+}
+
+#footer
+{
+	color: white;
+	background-color: black;
+	border-top:25px solid blue;
+	padding: 15px;
+}
+#footerp
+{
+font-size:43;
+}
+.gpa1
+{
+	padding-left:40%;
+	font-size:45;
+}
+.gpa2
+{
+	
+	font-size:45;
+}
+th
+{
+		padding-bottom:18px;
+		padding-top:18px;
+}
+#selectgrades
+{
+	font-size:37;
+}
+.left1
+{
+	padding-left:150px;
+}
+.right1
+{
+	padding-right:100px	;
+}
+
+
+
+/* CSS Document */
